@@ -6,27 +6,20 @@ import css from './RegisterForm.module.css';
 export const RegisterForm = () => {
   const dispatch = useDispatch();
 
-  const handleSubmit = (values, { resetForm }) => {
+const initialValues = {
+  name: "",
+  email: "",
+  password: "",
+};
+
+  const handleSubmit = (values, actions) => {
     dispatch(register(values));
-    resetForm();
+    actions.resetForm();
   };
 
   return (
     <Formik
-      initialValues={{ name: '', email: '', password: '' }}
-      validate={(values) => {
-        const errors = {};
-        if (!values.name) {
-          errors.name = 'Required';
-        }
-        if (!values.email) {
-          errors.email = 'Required';
-        }
-        if (!values.password) {
-          errors.password = 'Required';
-        }
-        return errors;
-      }}
+      initialValues={initialValues}
       onSubmit={handleSubmit}
     >
       <Form className={css.form} autoComplete="off">

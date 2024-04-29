@@ -17,20 +17,11 @@ export const LoginForm = () => {
     password: Yup.string().required('Required'),
   });
 
-  const handleSubmit = (values, { setSubmitting, resetForm }) => {
-    dispatch(logIn(values))
-      .unwrap()
-      .then(() => {
-        console.log('login success');
-      })
-      .catch(() => {
-        console.log('login error');
-      })
-      .finally(() => {
-        setSubmitting(false);
-        resetForm();
-      });
-  };
+  const handleSubmit = ( values, actions ) => {
+    dispatch(logIn(values));
+    actions.resetForm();
+
+  }
 
   return (
     <Formik
