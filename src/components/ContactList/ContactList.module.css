@@ -1,0 +1,6 @@
+.contactsList {
+    display: flex;
+    list-style-type: none;
+    padding-left:0px;
+    flex-wrap: wrap;
+}
