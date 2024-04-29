@@ -1,13 +1,14 @@
-//App.jsx
-import ContactList from "./components/ContactList/ContactList";
-import SearchBox from "./components/SearchBox/SearchBox";
-import ContactForm from "./components/ContactForm/ContactForm";
-import "./App.css";
+//ContactsPage.jsx
+import ContactList from "../../components/ContactList/ContactList";
+import SearchBox from "../../components/SearchBox/SearchBox";
+import ContactForm from "../../components/ContactForm/ContactForm";
+
 import { useEffect } from "react";
 import { useDispatch } from "react-redux";
-import { fetchContacts } from "./redux/contactsOps";
+import { fetchContacts } from "../../redux/contacts/contactsOps";
 
-const App = () => {
+
+const ContactsPage = () => {
     const dispatch = useDispatch();
 
   useEffect(() => {
@@ -23,4 +24,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default ContactsPage;
