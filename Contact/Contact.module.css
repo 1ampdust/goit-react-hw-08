@@ -1,0 +1,36 @@
+.contacts {
+    display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 5px;
+        margin-left: 10px;
+        margin-right: 10px;
+        width: 400px;
+}
+
+.contactsInfo {
+    display: flex;
+}
+
+.contactsDelete {
+    padding: 10px 20px;
+    margin-right: 50px;
+}
+
+.section {
+display: flex;
+    align-items: center;
+}
+
+.avatar {
+    width: 20px;
+        height: 20px;
+        margin-right: 10px;
+}
+
+.sectionContainer {
+    margin-left: 20px;
+}
