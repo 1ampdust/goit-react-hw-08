@@ -3,7 +3,7 @@ import css from "./Contact.module.css";
 import avatar from "./png/name.png";
 import avatar2 from "./png/phone.png";
 import { useDispatch } from "react-redux";
-import { deleteContact } from "../../redux/contacts/contactsSlice";
+import { deleteContact } from "../../redux/contacts/contactsOps";
 
 const Contact = ({ contact }) => {
   const dispatch = useDispatch();
