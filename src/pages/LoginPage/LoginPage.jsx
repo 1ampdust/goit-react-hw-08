@@ -1,3 +1,4 @@
+//LoginPage.jsx
 import DocumentTitle from '../../components/DocumentTitle';
 import { LoginForm } from '../../components/LoginForm/LoginForm';
 

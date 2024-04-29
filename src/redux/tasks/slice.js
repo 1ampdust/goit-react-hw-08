@@ -1,3 +1,4 @@
+//tasks/slice.js
 import { createSlice } from '@reduxjs/toolkit';
 import { logOut } from '../auth/operations';
 import { fetchTasks, addTask, deleteTask } from './operations';

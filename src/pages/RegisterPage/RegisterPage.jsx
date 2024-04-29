@@ -1,3 +1,4 @@
+//RegisterPage.jsx
 import DocumentTitle from '../../components/DocumentTitle';
 import { RegisterForm } from '../../components/RegisterForm/RegisterForm';
 
