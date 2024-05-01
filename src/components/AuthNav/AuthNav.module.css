@@ -1,3 +1,8 @@
+
+.nav {
+    display: flex;
+}
+
 .link {
     display: inline-block;
     text-decoration: none;
@@ -6,6 +11,10 @@
     color: #2a363b;
 }
 
-.link.active {
+.link:hover {
+    color: #e84a5f;
+}
+
+.active {
     color: #e84a5f;
 }

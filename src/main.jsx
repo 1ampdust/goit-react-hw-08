@@ -10,14 +10,14 @@ import "./index.css";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
+    <HelmetProvider>
     <Provider store={store}>
       <PersistGate loading={null} persistor={persistor}>
         <BrowserRouter>
-          <HelmetProvider>
             <App />
-          </HelmetProvider>
         </BrowserRouter>
       </PersistGate>
     </Provider>
+    </HelmetProvider>
   </React.StrictMode>
 );

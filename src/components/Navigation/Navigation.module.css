@@ -1,11 +1,24 @@
-.link {
-    display: inline-block;
-    text-decoration: none;
-    padding: 12px;
-    font-weight: 700;
-    color: #2a363b;
+.wrapper {
+    padding: 10px 0;
 }
 
-.link.active {
+.nav {
+    display: flex;
+    justify-content: center;
+}
+
+.navLink {
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    color: #333;
+    font-weight: bold;
+}
+
+.navLink:hover {
+    color: #e84a5f;
+}
+
+.active {
     color: #e84a5f;
 }
