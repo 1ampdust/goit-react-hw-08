@@ -1,6 +1,6 @@
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import { useDispatch } from 'react-redux';
-import { register } from '../../redux/auth/operations';
+import { userRegister } from "../../redux/auth/operations";
 import css from './RegisterForm.module.css';
 
 export const RegisterForm = () => {
@@ -13,7 +13,7 @@ const initialValues = {
 };
 
   const handleSubmit = (values, actions) => {
-    dispatch(register(values));
+    dispatch(userRegister(values));
     actions.resetForm();
   };
 

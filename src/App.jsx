@@ -14,7 +14,7 @@ const LoginPage = lazy(() => import("./pages/LoginPage/LoginPage"));
 const ContactsPage = lazy(() => import("./pages/ContactsPage/ContactsPage"));
 const NotFoundPage = lazy(() => import("./pages/NotFoundPage/NotFoundPage"));
 
-function App() {
+const App = () => {
   const dispatch = useDispatch();
 
   useEffect(() => {
