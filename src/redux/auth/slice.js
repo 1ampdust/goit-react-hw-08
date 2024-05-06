@@ -25,8 +25,11 @@ const authSlice = createSlice({
         state.isLoggedIn = true;
         state.isRefreshing = false;
       })
-      .addCase(logOutUser.fulfilled, () => {
-        return INITIAL_STATE;
+      .addCase(logOutUser.fulfilled, (state) => {
+        state.user = null;
+        state.token = null;
+        state.isLoggedIn = false;
+        state.isRefreshing = false;
       })
       .addMatcher(
         isAnyOf(
