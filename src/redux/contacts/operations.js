@@ -38,3 +38,15 @@ export const deleteContact = createAsyncThunk(
     }
   }
 );
+export const logOut = createAsyncThunk(
+  "contacts/logOut",
+  async (_, thunkAPI) => {
+    try {
+      const { data } = await instance.get("/contacts");
+      console.log("logOut data: ", data);
+      return data;
+    } catch (error) {
+      return thunkAPI.rejectWithValue(error.message);
+    }
+  }
+);
