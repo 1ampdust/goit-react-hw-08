@@ -5,7 +5,6 @@ export default function HomePage() {
   return (
     <>
       <DocumentTitle>Home</DocumentTitle>
-
       <div className={styles.container}>
         <h1 className={styles.title}>
           HomePage{' '}
